@@ -92,7 +92,7 @@ class _DetailScreenState extends State<DetailScreen> {
       final String text = label.text.toString();
       final double confidence = label.confidence!;
       setState(() {
-        result = result + ' ' + ' $text     $confidence\n';
+        result = '$result  $text     $confidence\n';
       });
       print(text);
     }
